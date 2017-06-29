@@ -35,6 +35,3 @@ The Form Key and Title value are not really important as when you copy paste the
 
 What this JSON does is to configure the form with different options than the defaults ones. For example you can see in the menu form that there are some fields that appear conditionally depending of the selection that you do. In article we use a markdown text area, but you could use a WYSWIG editor, etc. The form engin is called [Alpaca](http://www.alpacajs.org/), it is an open source project maintained by Cloud CMS and it has a lot of options. I refer you as well to the [form documentation](https://www.cloudcms.com/documentation/api/api/forms/overview.html) on the Cloud CMS website as there are examples on how to create forms.
 
-  
-
-

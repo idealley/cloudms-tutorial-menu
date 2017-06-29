@@ -22,18 +22,11 @@ Let’s define what we mean by category and articles. An article, is the content
 
 We could create a menu that generates itself based on the nesting of articles and categories, and we could apply this tutorial to it, by adding or modifying very few properties to existing content, but we prefer the decoupled version as it allows to keep the menu structure and change the target of a menu item at any point. It even allows to have many menu items linking to one article.
 
-  
-
-
 ![](https://raw.githubusercontent.com/idealley/cloudcms-manage-menus/master/images/menu-graph.png "menu-graph.png")
 
 The green node represent the content graph, the blue one the menu graph. Nodes that link the menu to the content are the purple ones. Notice that the graph is directed, this means that the relations between nodes have a direction, either `INCOMING` or `OUTGOING`, this is represented by the arrow end.
 
-  
 `(A)-->(B)<--(C)`
 
 We can say that node `A` and `C` have each one `OUTGOING` relation and that node `B` has two `INCOMING` relations. This notation is the Cypher language \(we will use it freely\), it is very expressive and easy to understand in order to describe nodes and relations. We will be using it when we need to describe the relations and structure. It is not a feature of Cloud CMS.
-
-  
-
 
