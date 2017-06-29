@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting Started](chapter1.md)
+* [Getting Started](getting-started.md)
 * [Adding relations](adding-relations.md)
+* [Main menu](main-menu.md)
 
