@@ -15,7 +15,7 @@ block content
             a(href= data.breadcrumb[i].path)= data.breadcrumb[i].title 
             span= carret
         - }
-                
+
     h1!= data.item[0].title
     p= data.item[0].body
 
@@ -25,7 +25,8 @@ block content
             h2=data.items[i].title
             p=data.items[i].leadParagraph
             a(href='/' + data.item[0].slug + '/' + data.items[i].slug) More...
-        - }  
+        - }
 ```
 
 We are cheating a little here. The home link brings us back to the Main Menu as we do not have any homepage... Notice that thanks to the flexibility of the Jade engine we could add some little logic for the breadcrumb and we are checking if we are display a category. If it is the case, we need to iterate through the `items` property. No fancy ES6 javascript here. Thus we can maximise browser compatibility. Check the `relatives()` method in the `request.js` it has all the elements to limit the amount of articles displayed and to skip a certain amount of articles for the second page.
+
