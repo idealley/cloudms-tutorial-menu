@@ -8,4 +8,5 @@
 * [Displaying the menu](displaying-the-menu.md)
 * [Routing](routing.md)
 * [Breadcrumb Parser](breadcrumb-parser.md)
+* [Displaying pages](displaying-pages.md)
 
