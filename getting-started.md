@@ -14,7 +14,7 @@ Additionally, you will need a [Cloud CMS](https://www.cloudcms.com/) account. if
 
 You will be presented with two options select “Empty project”. Give it a “title” and an optional description. Then it takes a little while, and you will have a shiny new project in your dashboard.
 
-We need to create api keys, thus click on your project. And on the left hand-side menu click on Application. When the page opens, create a new Application, the defaults options are fine, just give it a name. When the application has been created \(you might need to refresh the page to see it\), go to the “API keys” menu item on the left hand-side menu.  
+We need to create api keys, thus click on your project. And on the left hand-side menu click on Application. When the page opens, create a new Application, the defaults options are fine, just give it a name. When the application has been created \(you might need to refresh the page to see it\), go to the “API keys” menu item on the left hand-side menu. \(The bellow credentials have been deleted\).  
 ![](https://raw.githubusercontent.com/idealley/cloudcms-manage-menus/master/images/api-keys.png "api-keys.png")
 
 Copy the content of the `gitana.json` into a `gitana.json` file, that you can put at the root of your project. This file will not be commited to github as it has been added to the `.gitignore`.
