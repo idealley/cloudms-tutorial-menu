@@ -56,4 +56,8 @@ The reduction here although it might l like black magic is quite simple. We want
 
 From the current item we extract by [destructuring](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) the `title` and the `slug`. We then recuparate the `childSlug` located in the `article` or `category` property that was nicely mapped for us by Cloud CMS's `_relator`. We then add all those three reduced values to the accumulator.
 
+We check if the item has a `path` property (this was added bythe method `parentsToTree()`) if it is the case we follow it and parse the children recursively.
+
+The middleware calls `addBreadcrumPath()`. In our case it does not do much... it just adds a `/` in front of the slug, but it is more usefull for if you want the menu items to be visible in the path. Check the commented code.
+
 
