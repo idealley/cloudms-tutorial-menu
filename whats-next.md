@@ -2,7 +2,9 @@
 
 This tutorial should not be considered as a plugin solution. It is more a demonstration of using the graph to create a coherent menu system that can be managed by content editors.
 
-When the menu is generated you could also save an xml sitemap. 
+When the menu is generated you could also save an xml sitemap.
+
+The display of the breadcrumb needs to have a better logic. The last link should not be clickable for example.
 
 Caching is missing. I would also suggest to add to Cloud CMS the generated breadcrumb object. The breadcrumb could be generated the first time a page is called \(checking if the property is in the `json` response or not\), then that property could be regenerated if the cache is cleaned. This will save processing time and make the website faster.
 
