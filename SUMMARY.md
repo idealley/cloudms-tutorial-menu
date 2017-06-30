@@ -6,4 +6,5 @@
 * [Main menu](main-menu.md)
 * [Menu Parser](menu-parser.md)
 * [Displaying the menu](displaying-the-menu.md)
+* [Routing](routing.md)
 
