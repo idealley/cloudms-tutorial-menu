@@ -10,6 +10,8 @@ The aim of this tutorial is to demonstrate:
 * Automatically display a breadcrumb \(you are here: somewhere &gt; some article\) (still improving this feature)
 * Display a breadcrumb for articles that are in a category but not necessarily linked to a menu item \(newspaper do not add all their articles in the sport menu\)
 
+* Automatically generate sitemaps for search engines.
+
 First, we will create some content, then, we will create a menu and link menu items to content items whether it is category or article.
 
 This demo was build based on the [express Cloud CMS sdk](https://github.com/gitana/sdk/tree/master/helloworld-express).
