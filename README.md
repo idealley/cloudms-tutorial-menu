@@ -5,13 +5,9 @@ Using the graph database properties of Cloud CMS, it is possible to use Cloud CM
 The aim of this tutorial is to demonstrate:
 
 * How to use Cloud CMS and its graph capabilities to create a menu graph
-
 * Link this menu to content
-
 * Retrieve and display the menu
-
-* Automatically display a breadcrumb \(you are here: somewhere &gt; some article\)
-
+* Automatically display a breadcrumb \(you are here: somewhere &gt; some article\) (still improving this feature)
 * Display a breadcrumb for articles that are in a category but not necessarily linked to a menu item \(newspaper do not add all their articles in the sport menu\)
 
 First, we will create some content, then, we will create a menu and link menu items to content items whether it is category or article.

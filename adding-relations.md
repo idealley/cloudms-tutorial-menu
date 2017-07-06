@@ -2,7 +2,9 @@
 
 Now that everything is in place we need to add relations. We will use the interface, thus we will get to know it  a little better. First let’s add two articles in the only category created, for that, click on `Article 1` go to “edit properties” there is a “category select field” click on select and choose the only category we have. Do the same for `Article 2`. `Article 3` will be without category.
 
-Now we want to create the menu structure. Open each menu item and create the following relations. The syntax `-[name:of-relation]->` denotes the direction and the name of the relation. 
+Now we want to create the menu structure. Open each menu item from the Cloud CMS interface and create the following relations. You will notice that each item has a drop down that let you select, for a menu item, a parent and an aritcle or a category to link the menu item to. When you saved the item you can go to the graph tab to see the result of your changes.
+
+The syntax `-[name:of-relation]->` denotes the direction and the name of the relation. 
 
 ```
 (Child 1)-[a:parent-menu-association]->(Main Menu)

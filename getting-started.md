@@ -4,7 +4,7 @@ Clone the code of the accompanying code repository on your machine:
 
 `$ git clone https://github.com/idealley/cloudcms-manage-menus.git <optional folder name>`
 
-Install dependencies
+Install dependencies (you have to have [node and npm](https://nodejs.org/en/) installed. It works with the latest version v(8.x.x), then run
 
 `$ npm install`
 
@@ -23,9 +23,13 @@ You are now all set. Let’s run the tutorial set up:
 
 `$ cd <your project folder for the tutorial>`
 
+This will open a CLI with few options, hit the "enter key" with the first option selected. This will create the definitions (types and associations) that needed for this tutorial.
+
+Run again \(sorry this will get better soon\):
+
 `$ node setup`
 
-This will open a CLI with few options, hit the "enter key" with the first option selected, then run the previous command \(sorry this will get better soon\), then select “Import sample content” and hit again the "enter key". The First time the command was run it imported and created the necessary types and associations, the second time the sample content has been imported. If you navigate to the “content” menu item in the left hand-side menu, you should see the following:![](https://lh6.googleusercontent.com/JuqBN-LymyLeuCaTZ98ApgFT17kiWaxD-cOAwrBR95uMumngw49A08jxUWlzYrNMJ82GBhmb1lbDXy8rMXRhv9vdqW7kjcYrml4alZ75z2kSZZSgFSWUWB4QSpJAm-Bqvs5dAKNG "content-items.png")This could be a basic setup for a blog. Now if you click on an article, you will see a form \(under “edit properties”\) this is a raw generated form by Cloud CMS, if you want to use a customised form, you can create forms \(menu items in the left hand-side menu\) copy the content of the forms you find in: `<your-cloned-project>/imports/forms` .
+Then select “Import sample content” and hit again the "enter key". If everything goes well, the second time you ran the command, the sample content has been imported. If you navigate to the “content” menu item in the left hand-side menu, you should see the following:![](https://lh6.googleusercontent.com/JuqBN-LymyLeuCaTZ98ApgFT17kiWaxD-cOAwrBR95uMumngw49A08jxUWlzYrNMJ82GBhmb1lbDXy8rMXRhv9vdqW7kjcYrml4alZ75z2kSZZSgFSWUWB4QSpJAm-Bqvs5dAKNG "content-items.png")This could be a basic setup for a blog. Now if you click on an article, you will see a form \(under “edit properties”\) this is a raw generated form by Cloud CMS, if you want to use a customised form, you can create forms \(menu items in the left hand-side menu\) copy the content of the forms you find in: `<your-cloned-project>/imports/forms` .
 
 First, create a new form, in the pop up be sure to select the correct definition:
 
