@@ -4,7 +4,7 @@ Clone the code of the accompanying code repository on your machine:
 
 `$ git clone https://github.com/idealley/cloudcms-manage-menus.git <optional folder name>`
 
-Install dependencies (you have to have [node and npm](https://nodejs.org/en/) installed. It works with the latest version v(8.x.x), then run
+Install dependencies \(you have to have [node and npm](https://nodejs.org/en/) installed. It works with the latest version v\(8.x.x\), then run
 
 `$ npm install`
 
@@ -23,7 +23,9 @@ You are now all set. Let’s run the tutorial set up:
 
 `$ cd <your project folder for the tutorial>`
 
-This will open a CLI with few options, hit the "enter key" with the first option selected. This will create the definitions (types and associations) that needed for this tutorial.
+`$ node setup`
+
+This will open a CLI with few options, hit the "enter key" with the first option selected. This will create the definitions \(types and associations\) that are needed for this tutorial.
 
 Run again \(sorry this will get better soon\):
 
