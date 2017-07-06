@@ -9,18 +9,25 @@ The aim of this tutorial is to demonstrate:
 * Retrieve and display the menu
 * Automatically display a breadcrumb \(you are here: somewhere &gt; some article\) (still improving this feature)
 * Display a breadcrumb for articles that are in a category but not necessarily linked to a menu item \(newspaper do not add all their articles in the sport menu\)
-
 * Automatically generate sitemaps for search engines.
 
 First, we will create some content, then, we will create a menu and link menu items to content items whether it is category or article.
 
-This demo was build based on the [express Cloud CMS sdk](https://github.com/gitana/sdk/tree/master/helloworld-express).
+* This demo was build based on the [express Cloud CMS sdk](https://github.com/gitana/sdk/tree/master/helloworld-express).
+* You can find the accompanying code in [this github repository](https://github.com/idealley/cloudcms-manage-menus)
 
-You can find the accompanying code in [this github repository](https://github.com/idealley/cloudcms-manage-menus)
+Let’s define what we mean by category and articles. An article, is the content itself. It is a single content item, like a news article or a product description, a category is a set of articles arbitrarily grouped. This is the sport section of a newspaper. It displays all the sport articles. Of course there are different ways of grouping articles. A tag could be considered as a category, or can work as a category. Indeed you can display all articles tagged "javascript".
 
-Let’s define what we mean by category and articles. An article, is the content itself. It is a single content item, like a news article or a product description, a category is a set of articles arbitrarily grouped. This is the sport section of a newspaper. It displays all the sport articles. Of course there are different ways of grouping articles.
+We could create a menu that generates itself based on the nesting of articles and categories, and the concepts exposed in this tutorial can be applied to create such a menu, by adding or modifying very few properties to existing content
 
-We could create a menu that generates itself based on the nesting of articles and categories, and we could apply this tutorial to it, by adding or modifying very few properties to existing content, but we prefer the decoupled version as it allows to keep the menu structure and change the target of a menu item at any point. It even allows to have many menu items linking to one article.
+We prefer to have a menu that is decoupled from the content as has many advantages:
+* it allows to keep the menu structure and change the target of a menu item at any point
+* It allows to have many menu items linking to one article.
+* We can apply different templates for different menu items
+* We can order categories (demonstrated in this tutorial)
+* It allows to have menu item names that are different from the title of articles. They can be shorter for example.
+
+It is of course a little bit more complicated to imlement as you need to create your content and then, link your menu to your content. Of course not all articles need to be in the menu: you want to have the news category appear in the menu, so that the user could click on "news" and see all articles published in this category, but you do not want to have to link each article to a menu item under the news item... 
 
 ![](https://raw.githubusercontent.com/idealley/cloudcms-manage-menus/master/images/menu-graph.png "menu-graph.png")
 
