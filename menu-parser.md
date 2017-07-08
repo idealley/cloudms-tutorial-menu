@@ -36,7 +36,7 @@ The data flowing through the `menuParser` is transformed by two methods that you
     }
 ```
 
-The method children to tree simply iterates through all the items with the `Array.map()` method and matches the child with its parent if the menu item is set to be visible in Cloud CMS. It is then follows the graph recursively until there is no children to add anymore (when `children.length` has a value of `0`). This method returns the built tree.
+The method children to tree simply iterates through all the items with the `Array.map()` method and matches the child with its parent if the menu item is set to be visible in Cloud CMS. It is then follows the graph recursively until there is no children to add anymore \(when `children.length` has a value of `0`\). This method returns the built tree.
 
 ```javascript
         parse: (items, path) => {
@@ -91,7 +91,7 @@ The parse method creates the url paths for each menu items. When the tree is bui
         }
 ```
 
-The `_relator` indicates to Cloud CMS that you want to assiciate two nodes with a relation. Here we are showing the `article` property but it works in exactly the same way for the `category` property. We need to define the `associationType` and the `nodeType` that we want to associate. When we have used the setup CLI in imported in your Cloud CMS project the association as well as the article type. But in the `_relator` property also maps the slug of the article or the category to the menu item. Doing this saves us additional API requests to build the menu as we would have to query all the items to get the slug in order to build the paths. We do the same for the item ID (`_doc`).
+The `_relator` indicates to Cloud CMS that you want to assiciate two nodes with a relation. Here we are showing the `article` property but it works in exactly the same way for the `category` property. We need to define the `associationType` and the `nodeType` that we want to associate. When we have used the setup CLI in imported in your Cloud CMS project the association as well as the article type. But in the `_relator` property also maps the slug of the article or the category to the menu item. Doing this saves us additional API requests to build the menu as we would have to query all the items to get the slug in order to build the paths. We do the same for the item ID \(`_doc`\).
 
 Now that we understand the underlying structure of our data, let's comeback to the `parse()` method:
 
@@ -100,7 +100,7 @@ Now that we understand the underlying structure of our data, let's comeback to t
     if(keys.indexOf(i.contentType) !== -1)
 ```
 
-We are extracting all the keys of the item object and we then check if the item has a key `article` or `category`. If it is the case (the index value is not equal to `-1` which means that the key does not exist) we can recuparate the child's `slug` and concatenate it to the current path. Then we verify if the current item has children, if it is the case we walk down the tree recursively. Then we sort the children, based on the parameter set in Cloud CMS for the current item. To be sparse on memory, we should implement a head, ...tail recurssion here, to prevent any stackoverflow with big menus.
+We are extracting all the keys of the item object and we then check if the item has a key `article` or `category`. If it is the case \(the index value is not equal to `-1` which means that the key does not exist\) we can recuparate the child's `slug` and concatenate it to the current path. Then we verify if the current item has children, if it is the case we walk down the tree recursively. Then we sort the children, based on the parameter set in Cloud CMS for the current item.
 
 Notice the commented code in the method, this code allows to add menu item slugs in the path. That is one way of doing it.
 
