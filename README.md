@@ -15,6 +15,7 @@ First, we will create some content, then, we will create a menu and link menu it
 
 * This demo was build based on the [express Cloud CMS sdk](https://github.com/gitana/sdk/tree/master/helloworld-express).
 * You can find the accompanying code in [this github repository](https://github.com/idealley/cloudcms-manage-menus).
+* You can find a package with tested code[ in this repository](https://github.com/idealley/cloudcms-navigation). \(A NPM package will be published ASAP\)
 * To improve the text of this tutorial, correct an error you can [fork this repository](https://github.com/idealley/cloudms-tutorial-menu) and submit a pull request
 
 Let’s define what we mean by category and articles. An article, is the content itself. It is a single content item, like a news article or a product description, a category is a set of articles arbitrarily grouped. This is the sport section of a newspaper. It displays all the sport articles. Of course there are different ways of grouping articles. A tag could be considered as a category, or can work as a category. Indeed you can display all articles tagged "javascript".
