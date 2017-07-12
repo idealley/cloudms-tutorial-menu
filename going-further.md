@@ -11,5 +11,7 @@ Vue is "a progressive web framework". it means that you can include Vue in any h
 
 When you use Vue as a full stack framework you have the additional benefit of using the latest features of javascript as well as web components.
 
+Work in progress...
+
 
 
